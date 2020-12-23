@@ -1,0 +1,190 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+/* navigation bar */
+.navbar {
+  padding: 22px 0px;
+  background-color: #ffffff !important;
+  border-bottom: none !important;
+}
+
+.navbar ul li a {
+  color: #000000 !important;
+  font-weight: 500 !important;
+  letter-spacing: 1px;
+  font-size: 14px !important;
+  transition: all 0.5s ease-in;
+}
+
+.navbar ul li .join {
+  color: #ffffff !important;
+}
+
+.navbar ul li a:hover {
+  color: #112e57 !important;
+}
+
+.navbar-toggle {
+  border: 1px solid #000000 !important;
+  transition: all 0.5s ease-in;
+}
+
+.navbar-toggle:hover {
+  background-color: #d8d8d8 !important;
+}
+
+.navbar-default .navbar-collapse {
+  border-color: transparent !important;
+}
+
+.navbar-brand {
+  padding-top: none !important;
+}
+
+.join {
+  background-color: #0a3dab;
+  border: 1px solid #0a3dab;
+  border-radius: 15px;
+  border-width: 3.5px;
+}
+/* navigation bar ends */
+
+.activity {
+  height: 60%;
+  position: absolute;
+  top: 70%;
+  left: 70%;
+  transform: translate(-70%, -70%);
+}
+
+.s1 {
+  background-image: url("/img/leohalflogo.jpg");
+  background-size: cover;
+}
+
+.section h1 {
+  font-size: 75px;
+  font-family: "montserrat", "Times New Roman", Times, serif;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  transform: translate(-50%, -20%);
+  color: #ffffff;
+  text-align: left;
+
+  width: 70%;
+  margin-left: 5%;
+}
+
+.ellaborate {
+  margin: 20%;
+  width: 50%;
+  margin-left: 5%;
+  font-size: 20px;
+}
+
+.ellaborate p {
+  color: #ffffff;
+  margin: 50px 0px;
+}
+
+.header-primary {
+  top: 40% !important;
+}
+
+.text-primary {
+  color: #ffcf01 !important;
+  font-size: 125px;
+  /* font-family: "montserrat", "Times New Roman", Times, serif; */
+}
+
+.s2 {
+  background: #fff;
+}
+
+.s2 h1 {
+  font-size: 75px;
+  color: #000000;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.description {
+  margin: 20%;
+  width: 50%;
+  margin-left: 5%;
+  font-size: 20px;
+}
+
+.description p {
+  margin: 50px 0px;
+}
+
+.s3 {
+  background: #112e57;
+}
+
+/* Service style */
+
+.header-good {
+  top: 15% !important;
+}
+
+.text-good {
+  font-size: 50px;
+}
+
+.act-name {
+  color: #ffcf01;
+  font-size: 25px;
+  font-family: "Gill Sans MT", "Times New Roman", Times, serif;
+}
+
+.act-description {
+  font-size: 20px;
+}
+
+.act-of-good {
+  width: 200px;
+  margin-top: 50px;
+}
+
+.act-of-good {
+  margin: 0px 15px;
+  color: #ffffff;
+}
+
+.act-info {
+  padding: 10px 0px 30px 0px;
+}
+
+h4.act-description {
+  font-family: "montserrat", "Times New Roman", Times, serif;
+  font-weight: 350;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.page-link {
+  padding: 0%;
+}
+
+.page-link li {
+  list-style: none !important;
+}
+
+.page-link li a {
+  color: #ffffff !important;
+  font-weight: 500 !important;
+  letter-spacing: 1px;
+  font-size: 20px !important;
+  transition: all 0.1s ease-in;
+}
+
+.page-link li a:hover {
+  color: #ffcf01 !important;
+}

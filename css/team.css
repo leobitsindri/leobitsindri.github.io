@@ -1,0 +1,173 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+/* navigation bar */
+.navbar {
+  padding: 22px 0px;
+  background-color: #ffffff !important;
+  border-bottom: none !important;
+}
+
+.navbar ul li a {
+  color: #000000 !important;
+  font-weight: 500 !important;
+  letter-spacing: 1px;
+  font-size: 14px !important;
+  transition: all 0.5s ease-in;
+}
+
+.navbar ul li .join {
+  color: #ffffff !important;
+}
+
+.navbar ul li a:hover {
+  color: #112e57 !important;
+}
+
+.navbar-toggle {
+  border: 1px solid #000000 !important;
+  transition: all 0.5s ease-in;
+}
+
+.navbar-toggle:hover {
+  background-color: #d8d8d8 !important;
+}
+
+.navbar-default .navbar-collapse {
+  border-color: transparent !important;
+}
+
+.navbar-brand {
+  padding-top: none !important;
+}
+
+.join {
+  background-color: #0a3dab;
+  border: 1px solid #0a3dab;
+  border-radius: 15px;
+  border-width: 3.5px;
+}
+/* navigation bar ends */
+
+body {
+  font-family: "sans-serif", "Times New Roman", Times, serif;
+}
+
+.intro {
+  height: 100vh;
+}
+
+.intro video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.intro h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 100px;
+  font-weight: 700;
+}
+
+/* section starts */
+
+section {
+  height: 100%;
+  background-color: #ffffff;
+  color: #112e57;
+}
+
+.team-member {
+  margin-top: 50px;
+}
+
+.team-member {
+  margin: 0px 15px;
+}
+
+.team-member-info {
+  padding: 10px 0px 30px 0px;
+}
+
+.team-member-name {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding-top: 2px;
+}
+
+.team-member-designation {
+  color: #112e57;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+
+.social-list {
+  padding-left: 0%;
+}
+
+.social-list li {
+  list-style: none;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 6px;
+  margin-top: 5px;
+}
+
+.social-list i {
+  font-size: 18px;
+}
+
+.icon-gray i {
+  color: #000000;
+}
+
+.img-responsive {
+  border-color: #112e57 !important;
+  border-width: 2px !important;
+  border-radius: 175px !important;
+}
+
+.owl-theme {
+  text-align: center;
+}
+
+.container h2 {
+  font-size: 50px;
+  font-weight: 500;
+  padding-top: 10%;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.container .batch {
+  font-size: 30px;
+}
+
+/* footer starts */
+footer {
+  background-color: #112e57;
+  color: #ffffff;
+}
+
+.address h5 {
+  font-size: 16px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+
+.icons {
+  color: #ffffff;
+  font-size: 18px;
+  padding-top: 0;
+  padding-bottom: 20px;
+}

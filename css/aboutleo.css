@@ -1,0 +1,150 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+/* navigation bar */
+.navbar {
+  padding: 22px 0px;
+  background-color: #ffffff !important;
+  border-bottom: none !important;
+}
+
+.navbar ul li a {
+  color: #000000 !important;
+  font-weight: 500 !important;
+  letter-spacing: 1px;
+  font-size: 14px !important;
+  transition: all 0.5s ease-in;
+}
+
+.navbar ul li .join {
+  color: #ffffff !important;
+}
+
+.navbar ul li a:hover {
+  color: #112e57 !important;
+}
+
+.navbar-toggle {
+  border: 1px solid #000000 !important;
+  transition: all 0.5s ease-in;
+}
+
+.navbar-toggle:hover {
+  background-color: #d8d8d8 !important;
+}
+
+.navbar-default .navbar-collapse {
+  border-color: transparent !important;
+}
+
+.navbar-brand {
+  padding-top: none !important;
+}
+
+.join {
+  background-color: #0a3dab;
+  border: 1px solid #0a3dab;
+  border-radius: 15px;
+  border-width: 3.5px;
+}
+/* navigation bar ends */
+
+body {
+  font-family: "sans-serif", "Times New Roman", Times, serif;
+}
+
+.intro {
+  height: 100vh;
+  background-image: url(img/leo.jpg);
+}
+
+.intro h1 {
+  color: #d8d8d8;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 100px;
+  font-weight: 700;
+}
+
+h1 .leader {
+  font-size: 25px !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+/* section starts */
+
+section {
+  height: 100%;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+section h1 {
+  font-family: "Times New Roman", Times, serif;
+  padding-top: 150px;
+  text-align: center;
+  font-size: 75px;
+}
+
+.text-center {
+  font-family: "montserrat", "Times New Roman", Times, serif;
+  font-size: 18px;
+  padding-top: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 50px;
+}
+
+.text-center p {
+  padding-bottom: 20px;
+}
+
+.text-center li {
+  list-style: none !important;
+}
+
+.read-more {
+  padding: 5px;
+  font-size: 25px;
+  font-weight: 100;
+  color: #000000;
+  background-color: #ffcf01;
+  border: 1px solid #ffcf01;
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+/* footer starts */
+footer {
+  background-color: #112e57;
+  color: #ffffff;
+}
+
+.address h5 {
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+.social-list {
+  display: inline-block;
+  color: #000000;
+}
+
+.icons {
+  color: #ffffff !important;
+  font-size: 18px;
+  padding-top: 0;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+.social-list li {
+  display: inline-block;
+}
