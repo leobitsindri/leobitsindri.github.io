@@ -200,18 +200,18 @@ a:focus {
 
 .item:first-child .item__img-wrap {
   --aspect-ratio: 8/10;
-  --image: url(https://tympanus.net/Tutorials/SmoothScrollAnimations/img/1.jpg);
+  --image: url(gallery/f1.jpg);
 }
 
 .item:nth-child(2) .item__img-wrap {
   width: 1000px;
   --aspect-ratio: 120/76;
-  --image: url(https://tympanus.net/Tutorials/SmoothScrollAnimations/img/2.jpg);
+  --image: url(gallery/f3.jpg);
 }
 
 .item:nth-child(3) .item__img-wrap {
   --aspect-ratio: 60/75;
-  --image: url(https://tympanus.net/Tutorials/SmoothScrollAnimations/img/3.jpg);
+  --image: url(gallery/f2.jpg);
 }
 
 .item:nth-child(4) .item__img-wrap {
