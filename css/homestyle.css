@@ -76,6 +76,20 @@
   height: 100%;
 }
 
+/* video 1 style */
+
+.video-area1 {
+  background: #ffffff url(/img/thumbnail-01.jpg);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
 /* services styles */
 
 .service-area {
@@ -107,7 +121,7 @@
 
 /* video style */
 
-.video-area {
+.video-area2 {
   background: #ffffff url(/img/leohalflogo.jpg);
   padding-top: 200px;
   padding-bottom: 200px;
