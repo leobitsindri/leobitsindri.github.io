@@ -53,9 +53,37 @@
 /* navigation bar ends */
 
 /* content starts */
-.header {
-  height: 100vh;
+
+/* parallax starts */
+.parallax {
+  margin: 0 auto;
+  padding-top: 8%;
+  position: relative;
 }
+
+/* change for nav bar */
+#navbar {
+  transition: top 0.5s;
+}
+
+.parallax-scene {
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+.parallax-scene div img {
+  width: 120%;
+}
+/* @for $i from 1 through 6 {
+  .scene > *:nth-child(#{$i}) {
+    opacity: #{0.15 * $i};
+
+    button {
+      transform: rotate(#{180 - 30 * $i}deg);
+    }
+  }
+} */
+/* parallax ends */
 
 .img-responsive {
   position: absolute;
