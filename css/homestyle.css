@@ -57,7 +57,7 @@
 /* parallax starts */
 .parallax {
   margin: 0 auto;
-  padding-top: 8%;
+  padding-top: 0%;
   position: relative;
 }
 
@@ -73,6 +73,7 @@
 }
 .parallax-scene div img {
   width: 120%;
+  max-height: 100vh;
 }
 /* @for $i from 1 through 6 {
   .scene > *:nth-child(#{$i}) {

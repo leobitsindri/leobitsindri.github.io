@@ -80,19 +80,20 @@
     <!-- content starts -->
     <section class="header">
       <!-- parallax -->
-      <!-- <div id="container" class="parallax">
+      <div id="container" class="parallax">
         <div id="scene" class="parallax-scene">
           <div data-depth="0.80"><img src="img/layer6.png"></div>
-          <div data-depth="0.60"><img src="img/layer5.png"></div>
+          <!-- <div data-depth="0.60"><img src="img/layer5.png"></div> -->
           <div data-depth="1.00"><img src="img/layer4.png"></div>
           <div data-depth="0.40"><img src="img/layer3.png"></div>
           <div data-depth="0.20"><img src="img/layer2.png"></div>
           <div data-depth="0.00"><img src="img/layer1.png"></div>
         </div>
-      </div> -->
-      <div class="">
-        <img src="img/BIT VERVE.jpg" style="width: 100%;" alt="">
       </div>
+
+      <!-- <div class="">
+        <img src="img/BIT VERVE.jpg" style="width: 100%;" alt="">
+      </div> -->
     </section>
 
     <!-- team section -->
@@ -280,12 +281,12 @@
     <script>
 
       // parallex script
-    //   var scene;
-    //   var parallax;
-    // window.onload = function() {
-    //    scene = document.getElementById('scene');
-    //    parallax = new Parallax(scene);
-    // }
+      var scene;
+      var parallax;
+    window.onload = function() {
+       scene = document.getElementById('scene');
+       parallax = new Parallax(scene);
+    }
       // nav script added
       var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
