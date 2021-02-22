@@ -50,6 +50,12 @@
   border-radius: 15px;
   border-width: 3.5px;
 }
+
+/* change for nav bar */
+#navbar {
+  transition: top 0.5s;
+}
+
 /* navigation bar ends */
 
 body {
