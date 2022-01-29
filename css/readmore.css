@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+ 
+
+body {
+  position: relative;
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  /* font-size: 14px; */
+  color: #000;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+ 
+
+}
+
+
+
+
+
+
+/* --------------------------------------navigation bar styling starts--------------------------- */
+
+
+header{
+  background: #263770;
+  position: fixed;
+  width: 100%;
+}
+header {
+  position: fixed;
+  display: flex;
+  max-width: calc(115% - 200px);
+  margin: 0 auto;
+  padding: 0 90px;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+header .cont{
+  display: flex;
+  align-items: center;
+
+
+}
+header .cont .links{
+  margin-left: 230px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  padding: 0 0;
+  /* z-index: 2; */
+}
+
+header .cont .links .address{
+  display: none;
+
+
+}
+
+
+header .cont .links .icons{
+  display: none;
+
+
+}
+
+
+.cont .logo a img{
+  
+  width: 60px;
+ 
+}
+.cont .links li{
+  list-style: none;
+  line-height: 22px;
+  padding: 0px 10px;
+}
+.cont .links li a,
+.cont .links li label{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  align-items: center;
+  text-align: center;
+  padding: 0px 2px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.cont .links li label{
+  display: none;
+}
+
+header .cont #btn{
+  font-size: 16px;
+  background: #ffe609;
+  color: #113bb9;
+  top: 10px;
+  border-radius: 5px;
+  padding: 10px;
+
+}
+header .cont #btn:hover{
+  background-color: #f0cf18be;
+}
+
+.cont .links  li :hover{
+  color: #fce72c;
+}
+header .search-icon,
+header .menu-icon{
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  line-height: 70px;
+  width: 70px;
+  text-align: center;
+}
+header .menu-icon{
+  display: none;
+}
+
+
+header .search-box{
+  position: absolute;
+  height: 100%;
+  max-width: calc(100% - 50px);
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+header #show-search:checked ~ .search-box{
+  opacity: 1;
+  pointer-events: auto;
+}
+ .search-box input{
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  
+  padding: 0 100px 0 15px;
+}
+
+.search-box .go-icon{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 60px;
+  width: 70px;
+   background: #171c24;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+   cursor: pointer; 
+}
+header input[type="checkbox"]{
+  display: none;
+ }  
+
+ /* ---------------------------media queary for navigatiopn start------------------------------------------- */
+@media screen and (max-width: 1250px){
+  header{
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  header .cont .links{
+    margin-left: 30px;
+    
+  }
+  .cont .links li a{
+    padding: 0 10px;
+  }
+   header .search-box{
+    max-width: calc(100% - 100px);
+  }
+   header .search-box input{
+    padding: 0 100px 0 15px;
+  }
+
+  .box section .bike img{
+    width: 43rem;
+    margin-bottom: 6rem;
+  }
+}
+
+
+@media screen and (max-width: 961px){
+  header .menu-icon{
+    display: block;
+  }
+  header #show-menu:checked ~ .menu-icon i::before{
+    content: "\f00d";
+  }
+  header .cont .links{
+    display: block;
+    position: absolute;
+    background: #263770;
+    height: 112rem;
+    width: 100%;
+    top: 80px;
+    left: -100%;
+    margin-left: 0;
+    max-width: 100%;
+    overflow-y: auto;
+    padding-bottom: 100px;
+    transition: all 1s ease;
+    z-index: 2;
+   
+
+   
+  }
+
+
+  header .cont .links  .icons{
+    display: block;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 1em;
+    color: #fff;
+
+  }
+
+  header .cont .links  .icons a{
+    padding: 0px 7px;
+  }
+
+
+
+
+  header .cont .links .address{
+    display: block;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    flex-wrap: wrap;
+    
+  }
+
+  
+  header #show-menu:checked ~ .cont .links{
+    left: 0%;
+  }
+
+  .cont .links li {
+    margin-left: -6rem;
+    padding: 17px 0px 0px 44px;
+
+}
+  /* .cont .links li{
+    margin: 15px -80px;
+  } */
+  .cont .links li a, .cont .links li label {
+    line-height: 17px;
+    font-size: 17px;
+    text-align: left;
+    display: block;
+    padding: 8px 90px;
+    cursor: pointer;
+}
+  header .cont #btn{
+    padding: 10px 0px 10px 0px;
+    right: 11px;
+    margin-left: 3rem;
+    margin-right: -1rem;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+
+  
+  .cont .links li a.desktop-link{
+    display: none;
+  }
+
+
+
+  
+
+
+  /* dropdown responsive code start */
+  .cont .links ul,
+  .cont .links ul ul{
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    background: none;
+    max-height: 0px;
+    overflow: hidden;
+  }
+  .cont .links #show-features:checked ~ ul,
+  .cont .links #show-services:checked ~ ul,
+  .cont .links #show-items:checked ~ ul{
+    max-height: 100vh;
+  }
+  .cont .links ul li{
+    margin: 7px 20px;
+  }
+  .cont .links ul li a{
+    font-size: 18px;
+    line-height: 30px;
+    border-radius: 5px!important;
+  }
+}
+@media screen and (max-width: 400px){
+  header{
+    padding: 0 10px;
+  }
+  
+
+  
+  
+}
+ /* ---------------------------media queary for navigatiopn ends------------------------------------------- */
+
+
+
+/* --------------------------------------navigation bar styling ends--------------------------- */
+
+
+
+body {
+    font-family: "sans-serif", "Times New Roman", Times, serif;
+  }
+  
+  .intro {
+    height: 100vh;
+    background-image: url(img/leo.jpg);
+  }
+  
+  .intro h1 {
+    color: #d8d8d8;
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Times New Roman", Times, serif;
+    font-size: 100px;
+    font-weight: 700;
+  }
+  
+  h1 .leader {
+    font-size: 25px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+  }
+  
+  /* section starts */
+  
+  section {
+    height: 100%;
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  section h1 {
+    font-family: "Times New Roman", Times, serif;
+    padding-top: 150px;
+    text-align: center;
+    font-size: 75px;
+  }
+  
+  .text-center {
+    font-family: "montserrat", "Times New Roman", Times, serif;
+    font-size: 18px;
+    padding-top: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 50px;
+  }
+  
+  .text-center p {
+    padding-bottom: 20px;
+  }
+  
+  .text-center li {
+    list-style: none !important;
+  }
+  
+  .read-more {
+    padding: 5px;
+    font-size: 25px;
+    font-weight: 100;
+    color: #000000;
+    background-color: #ffcf01;
+    border: 1px solid #ffcf01;
+    border-radius: 10px;
+    border-width: 1px;
+  }
+  @media screen and (max-width: 320px){
+    .intro h1 {
+        color: #d8d8d8;
+        position: absolute;
+        top: 4%;
+        left: 61%;
+        transform: translate(-50%, -50%);
+        font-family: "Times New Roman", Times, serif;
+        font-size: 79px;
+        font-weight: 700;
+    }
+
+    section h1 {
+        font-family: "Times New Roman", Times, serif;
+        padding-top: 39px;
+        text-align: center;
+        font-size: 55px;
+    }
+
+
+
+  }
+
+
+
+  /* <!---------------------------------FOOTER SECTION STARTS -----------------------------> */
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    /* margin-top: 10em; */
+    margin-bottom: 0px;
+    background: #263770;
+    font-weight: 600;
+    flex-wrap: wrap;
+  }
+  footer .address h5{
+    font-size: 15px;
+    color: #eee;
+  }
+  
+  
+  footer  .icons {
+    color: #f44336;
+    margin: 0px 0px;
+    cursor: pointer;
+    padding: 0px 0px;
+    font-size: 30px;
+  }
+  
+  footer .icons a{
+    padding: 1px 1px;
+  }
+  /* <!---------------------------------FOOTER SECTION ENDS -----------------------------> */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

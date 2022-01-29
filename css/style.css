@@ -1,0 +1,1296 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+ 
+
+body {
+  position: relative;
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  /* font-size: 14px; */
+  color: #000;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+ 
+
+}
+
+
+
+
+
+
+/* --------------------------------------navigation bar styling starts--------------------------- */
+
+
+header{
+  background: #263770;
+  position: fixed;
+  width: 100%;
+}
+header {
+  position: fixed;
+  display: flex;
+  max-width: calc(115% - 200px);
+  margin: 0 auto;
+  padding: 0 90px;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+header .cont{
+  display: flex;
+  align-items: center;
+
+
+}
+header .cont .links{
+  margin-left: 230px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  padding: 0 0;
+  /* z-index: 2; */
+}
+
+header .cont .links .address{
+  display: none;
+
+
+}
+
+
+header .cont .links .icons{
+  display: none;
+
+
+}
+
+
+.cont .logo a img{
+  
+  width: 60px;
+ 
+}
+.cont .links li{
+  list-style: none;
+  line-height: 22px;
+  padding: 0px 10px;
+}
+.cont .links li a,
+.cont .links li label{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  align-items: center;
+  text-align: center;
+  padding: 0px 2px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.cont .links li label{
+  display: none;
+}
+
+header .cont #btn{
+  font-size: 16px;
+  background: #ffe609;
+  color: #113bb9;
+  top: 10px;
+  border-radius: 5px;
+  padding: 10px;
+
+}
+header .cont #btn:hover{
+  background-color: #f0cf18be;
+}
+
+.cont .links  li :hover{
+  color: #fce72c;
+}
+header .search-icon,
+header .menu-icon{
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  line-height: 70px;
+  width: 70px;
+  text-align: center;
+}
+header .menu-icon{
+  display: none;
+}
+
+
+header .search-box{
+  position: absolute;
+  height: 100%;
+  max-width: calc(100% - 50px);
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+header #show-search:checked ~ .search-box{
+  opacity: 1;
+  pointer-events: auto;
+}
+ .search-box input{
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  
+  padding: 0 100px 0 15px;
+}
+
+.search-box .go-icon{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 60px;
+  width: 70px;
+   background: #171c24;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+   cursor: pointer; 
+}
+header input[type="checkbox"]{
+  display: none;
+ }  
+
+ /* ---------------------------media queary for navigatiopn start------------------------------------------- */
+@media screen and (max-width: 1250px){
+  header{
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  header .cont .links{
+    margin-left: 30px;
+    
+  }
+  .cont .links li a{
+    padding: 0 10px;
+  }
+   header .search-box{
+    max-width: calc(100% - 100px);
+  }
+   header .search-box input{
+    padding: 0 100px 0 15px;
+  }
+
+  .box section .bike img{
+    width: 43rem;
+    margin-bottom: 6rem;
+  }
+}
+
+
+@media screen and (max-width: 961px){
+  header .menu-icon{
+    display: block;
+  }
+  header #show-menu:checked ~ .menu-icon i::before{
+    content: "\f00d";
+  }
+  header .cont .links{
+    display: block;
+    position: absolute;
+    background: #263770;
+    height: 112rem;
+    width: 100%;
+    top: 80px;
+    left: -100%;
+    margin-left: 0;
+    max-width: 100%;
+    overflow-y: auto;
+    padding-bottom: 100px;
+    transition: all 1s ease;
+    z-index: 2;
+   
+
+   
+  }
+
+
+  header .cont .links  .icons{
+    display: block;
+    align-items: center;
+    font-size: 20px;
+    flex-wrap: wrap;
+    padding-top: 1em;
+    color: #fff;
+
+  }
+
+  header .cont .links  .icons a{
+    padding: 0px 4px;
+  }
+
+
+
+
+  header .cont .links .address{
+    display: block;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    flex-wrap: wrap;
+    
+  }
+
+  
+  header #show-menu:checked ~ .cont .links{
+    left: 0%;
+  }
+
+  .cont .links li {
+    margin-left: -6rem;
+    padding: 17px 0px 0px 44px;
+
+}
+  /* .cont .links li{
+    margin: 15px -80px;
+  } */
+  .cont .links li a, .cont .links li label {
+    line-height: 17px;
+    font-size: 17px;
+    text-align: left;
+    display: block;
+    padding: 8px 90px;
+    cursor: pointer;
+}
+  header .cont #btn{
+    padding: 10px 0px 10px 0px;
+    right: 11px;
+    margin-left: 3rem;
+    margin-right: -1rem;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+
+  
+  .cont .links li a.desktop-link{
+    display: none;
+  }
+
+
+
+  
+
+
+  /* dropdown responsive code start */
+  .cont .links ul,
+  .cont .links ul ul{
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    background: none;
+    max-height: 0px;
+    overflow: hidden;
+  }
+  .cont .links #show-features:checked ~ ul,
+  .cont .links #show-services:checked ~ ul,
+  .cont .links #show-items:checked ~ ul{
+    max-height: 100vh;
+  }
+  .cont .links ul li{
+    margin: 7px 20px;
+  }
+  .cont .links ul li a{
+    font-size: 18px;
+    line-height: 30px;
+    border-radius: 5px!important;
+  }
+}
+@media screen and (max-width: 400px){
+  header{
+    padding: 0 10px;
+  }
+  
+
+  
+  
+}
+ /* ---------------------------media queary for navigatiopn ends------------------------------------------- */
+
+
+
+/* --------------------------------------navigation bar styling ends--------------------------- */
+
+
+
+
+
+/* <!-- --------------------------------peranoma section css startss-------------------------------------------- --> */
+
+.box{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  transform:translateX(0%);
+ 
+}
+
+
+
+.box section{
+
+  width: 500%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background: #eeecab; */
+  /* background: linear-gradient(#9cddfc , #fff ); */
+
+}
+
+.box section #bg-1{
+  max-width: 383rem;
+  padding-left: 0rem;
+  
+}
+
+
+
+
+.box section .bike{
+  position: absolute;
+  bottom: -5%;
+  left: -27%;
+  /* animation:suspension 1s linear infinite ; */
+  animation: bike 60s linear infinite;
+
+
+}
+
+.box section  .bike img{
+  width: 43rem;
+  margin-bottom: -68px;
+}
+
+
+.box section #bg-2{
+  position: absolute;
+    width: 388rem;
+    margin-left: 6rem;
+    margin-right: 17px;
+    margin-bottom: -0.5rem;
+    z-index: 999;
+    
+}
+
+.box section #bg-3{
+  max-width: 383rem;
+  padding-left: 0rem;
+  
+}
+
+
+
+/*------------------------------ animation---------------------------- */
+@keyframes moveRight{
+  /* 100%{transform: translateX(-2950px)} */
+
+}
+
+
+.moveRight{
+  animation: moveRight 6s linear infinite;
+}
+
+
+@keyframes bike{
+  0%{
+      transform: translateX(0px);
+  }
+  90%, 100%{
+      transform: translateX(calc(450vw + 345px));
+  }
+
+}
+
+
+
+/* .box section:nth-child(2){
+  background: linear-gradient(#9cddfc , #fff );
+}
+
+.box section:nth-child(3){
+  background: #f8d2d1;background: linear-gradient(#9cddfc , #fff );
+  
+}
+
+.box section:nth-child(4){
+  background: linear-gradient(#9cddfc , #fff );
+} */
+
+
+
+.box section .content1 {
+  position: absolute;
+    width: 30%;
+    font-size: 1rem;
+    /* color: white; */
+    margin-left: -252rem;
+    margin-right: 768px;
+    margin-bottom: 24rem;
+    /* padding: 4px 7px 4px 7px; */
+    /* background: #2d8d4691; */
+    border-radius: 12px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box section .content1 h2{
+font-size: 55px;
+text-align: center;
+padding-left: 53px;
+color: rgb(46, 42, 42);
+}
+
+.box section .content1 h3{
+font-size: 27px;
+text-align: center;
+padding-left: 92px;
+color: brown;
+}
+
+
+
+.box section .content2{
+  width: 47%;
+    position: absolute;
+    font-size: 10rem;
+    color: white;
+    margin-left: -160rem;
+    margin-top: -178px;
+    padding: 10px 10px 10px 10px;
+    /* background: #403e3e4f; */
+}
+ 
+
+
+.box section .content2 h2{
+font-size: 30px;
+text-align: center;
+color: rgb(38 55 112);
+}
+
+.box section .content2 p{
+font-size: 18px;
+text-align: center;
+padding: 2px 2px;
+color: #ff0000;
+}
+
+
+
+.box section .content3{
+  width: 35%;
+    position: absolute;
+    font-size: 10rem;
+    color: white;
+    margin-left: 172rem;
+    margin-bottom: 7rem;
+    padding: 0px 0rem 0rem 0rem;
+    /* background: #fb080833; */
+    border-radius: 12px;
+
+ 
+}
+
+.box section .content3 h2{
+font-size: 30px;
+color: rgb(63 50 0)
+}
+
+.box section .content3 p{
+font-size: 18px;
+padding: 2px 2px;
+color: rgb(36 80 3);
+}
+
+
+
+
+.box section .content4 {
+  width: 24%;
+  position: absolute;
+  /* font-size: 1rem; */
+  margin-left: 279rem;
+  margin-bottom: 294px;
+  padding: 0px 0rem 0rem 0rem;
+}
+
+.box section .content4 .text{
+  /*position: absolute; */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* background: #0000006b; */
+    border-radius: 20px;
+    padding: 3px 10px;
+
+}
+
+
+.box section .content4 .text h2{
+  font-size: 22px;
+  color: #171c24;
+}
+
+
+
+
+.box section .content4 .text p{
+font-size: 18px;
+padding: 2px 2px;
+color: #87fd2e;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------media query for paranoma-------------------------------------- */
+
+
+
+
+
+/* @media (max-width: 1536px){
+  .box section #bg-1 {
+    margin-top: 3rem;
+    max-width: 291rem;
+    padding-left: 0rem;
+}
+
+.box section #bg-2 {
+ 
+  width: 293rem;
+  margin-left: 2rem;
+  margin-right: 9px;
+  margin-bottom: -3rem;
+}
+
+} */
+
+@media (max-width: 1024px){
+
+  .box section #bg-1 {
+    margin-top: 3rem;
+    max-width: 291rem;
+    padding-left: 0rem;
+}
+
+.box section #bg-2 {
+ 
+  width: 293rem;
+  margin-left: 2rem;
+  margin-right: 9px;
+  margin-bottom: -3rem;
+}
+
+
+
+
+
+/* .box section .bike{
+
+  bottom: 7%;
+  left: -27%;
+  
+
+
+}
+
+.box section .bike img {
+  width: 14rem;
+
+} */
+
+}
+
+@media (max-width: 900px){
+
+  .box section #bg-1 {
+    margin-top: 7rem;
+    max-width: 256rem;
+    padding-left: 0rem;
+}
+
+.box section #bg-2 {
+ 
+  width: 258rem;
+  margin-left: 2rem;
+  margin-right: 9px;
+  margin-bottom: -7rem;
+
+}
+}
+
+
+
+
+@media (max-width: 768px){
+
+  .box section #bg-1 {
+    margin-top: 11rem;
+    max-width: 218rem;
+    padding-left: 0rem;
+}
+
+
+.box section #bg-2 {
+ 
+  width: 220rem;
+  margin-left: 2rem;
+  margin-right: 9px;
+  margin-bottom: -11rem;
+}
+.box section .bike{
+
+  bottom: 7%;
+  left: -27%;
+  
+
+
+}
+
+.box section .bike img {
+  width: 14rem;
+
+}
+
+}
+
+
+
+@media (max-width: 687px){
+  .box section #bg-1 {
+    margin-top: 14rem;
+    max-width: 195rem;
+    padding-left: 0rem;
+  }
+
+
+.box section #bg-2 {
+ 
+  width: 220rem;
+  margin-left: 2rem;
+  margin-right: 9px;
+  margin-bottom: -11rem;
+}
+.box section .bike{
+
+  bottom: 7%;
+  left: -27%;
+  
+
+
+}
+
+.box section .bike img {
+  width: 14rem;
+  display: none;
+
+}
+
+}
+
+@media (max-width: 642px){
+
+  .box section #bg-1 {
+    margin-top: 16rem;
+    max-width: 182rem;
+    padding-left: 0rem;
+}
+
+
+.box section #bg-2 {
+ 
+  width: 184rem;
+  margin-left: 2rem;
+  margin-right: 9px;
+  margin-bottom: -16rem;
+}
+
+}
+
+@media (max-width: 568px){
+
+  .box section #bg-1 {
+    margin-top: 18rem;
+    max-width: 161rem;
+    padding-left: 0rem;
+}
+
+
+.box section #bg-2 {
+ 
+  width: 163rem;
+  margin-left: 2rem;
+  margin-right: 9px;
+  margin-bottom: -18rem;
+}
+
+}
+
+@media (max-width: 498px){
+
+  .box section #bg-1 {
+    margin-top: 20rem;
+    max-width: 142rem;
+    padding-left: 0rem;
+}
+
+
+.box section #bg-2 {
+  width: 144rem;
+  margin-left: 2rem;
+  margin-right: 9px;
+  margin-bottom: -20rem;
+}
+
+
+}
+
+
+
+
+@media (max-width: 425px){
+  .box section #bg-1 {
+    margin-top: 22rem;
+    max-width: 120rem;
+    padding-left: 0rem;
+}
+
+
+.box section #bg-2 {
+ 
+  width: 122rem;
+  margin-left: 2rem;
+  margin-right: 9px;
+  margin-bottom: -22rem;
+
+}
+.box section .bike{
+
+  bottom: 7%;
+  left: -27%;
+  
+
+
+}
+
+.box section .bike img {
+  width: 14rem;
+
+}
+
+
+}
+
+
+
+@media (max-width: 375px){
+  .box section #bg-1 {
+    margin-top: 23.5rem;
+    max-width: 107rem;
+    padding-left: 0rem;
+}
+
+
+.box section #bg-2 {
+ 
+  width: 109rem;
+    margin-left: 2rem;
+    margin-right: 9px;
+    margin-bottom: -23.5rem;
+
+}
+.box section .bike{
+
+  bottom: 8.5%;
+  left: -27%;
+  
+
+
+}
+
+.box section .bike img {
+  width: 11rem;
+
+}
+}
+
+
+@media (max-width: 320px)
+{
+ 
+  .box section #bg-1 {
+    margin-top: 25.5rem;
+    max-width: 91rem;
+    padding-left: 0rem;
+}
+
+
+.box section #bg-2 {
+ 
+  width: 93rem;
+  margin-left: 2rem;
+  margin-right: 9px;
+  margin-bottom: -25.5rem;
+
+}
+.box section .bike{
+
+  bottom: 8.5%;
+  left: -27%;
+  
+
+
+}
+
+.box section .bike img {
+  width: 9rem;
+}
+}
+
+
+
+
+
+
+
+/* <!-- --------------------------------peranoma section css ends-------------------------------------------- --> */
+
+
+
+/* ---------------------------------------media quary for content section-------------------------------------- */
+
+
+@media (max-width: 1024px){
+  .box section .content1 {
+    margin-left: -187rem;
+    margin-right: 738px;
+    margin-bottom: 16rem;
+  }
+
+  .box section .content2 {
+   
+    margin-left: -121rem;
+    margin-top: -101px;
+  }
+
+  .box section .content3 {
+    width: 36%;
+    margin-left: 129rem;
+    margin-bottom: 2rem;
+  }
+  .box section .content4 {
+    width: 24%;
+    margin-left: 210rem;
+    margin-bottom: 165px;
+}
+}
+
+@media (max-width: 978px){
+  .box section .content1 {
+    
+    width: 37%;
+    font-size: 1rem;
+    margin-left: -185rem;
+    margin-right: 764px;
+    margin-bottom: 16rem;
+      
+  }
+  .box section .content1 h2{
+  font-size: 55px;
+  padding-left: 53px;
+  
+  }
+  
+  .box section .content1 h3{
+  font-size: 27px;
+  padding-left: 92px;
+  
+  }
+
+  .box section .content2{
+    margin-left: -122rem;
+    margin-top: -75px;
+  }
+
+  .box section .content3 {
+    width: 39%;
+    margin-left: 128rem;
+    margin-bottom: 2rem;
+}
+
+.box section .content4 {
+  width: 24%;
+    margin-left: 211rem;
+    margin-bottom: 186px;
+}
+  
+}
+
+@media (max-width: 900px){
+  .box section .content1 {
+    width: 61%;
+    font-size: 0rem;
+    
+    margin-left: -146.5rem;
+    margin-bottom: 13rem;
+}
+.box section .content2 {
+  width: 70%;
+  margin-left: -105rem;
+  margin-top: -10rem;
+}
+.box section .content2 p {
+  font-size: 14px;
+  padding: 9px 112px;
+}
+
+
+.box section .content3 {
+  width: 35%;
+  margin-left: 114rem;
+  margin-bottom: 0rem;
+}
+.box section .content4 {
+  width: 29%;
+  margin-left: 187rem;
+  margin-bottom: 214px;
+}
+}
+
+
+
+@media (max-width: 768px){
+  .box section .content1 {
+    width: 69%;
+    font-size: 0rem;
+    /* margin-left: -26rem; */
+    margin-left: -114.5rem;
+    margin-bottom: 8rem;
+}
+.box section .content2 {
+  width: 78%;
+  margin-left: -88rem;
+  margin-top: -10rem;
+}
+.box section .content2 p {
+  font-size: 14px;
+  padding: 9px 112px;
+}
+
+
+.box section .content3 {
+  width: 96%;
+  margin-left: 27rem;
+  margin-bottom: 13rem;
+}
+.box section .content4 {
+  width: 66%;
+  margin-left: 117rem;
+  margin-bottom: 167px;
+}
+}
+
+
+@media (max-width: 650px){
+  .box section .content1 {
+    width: 93%;
+    font-size: 0rem;
+    /* margin-left: -26rem; */
+    margin-left: -90.5rem;
+    margin-bottom: 8rem;
+}
+.box section .content2 {
+  width: 91%;
+  margin-left: -81rem;
+  margin-top: -10rem;
+}
+.box section .content2 p {
+  font-size: 14px;
+  padding: 9px 112px;
+}
+
+
+.box section .content3 {
+  width: 96%;
+  margin-left: 14rem;
+  margin-bottom: 13rem;
+}
+.box section .content4 {
+  width: 66%;
+  margin-left: 97rem;
+  margin-bottom: 94px;
+}
+
+}
+
+
+@media (max-width: 568px){
+  .box section .content1 {
+    width: 109%;
+    font-size: 0rem;
+    /* margin-left: -26rem; */
+    margin-left: -63.5rem;
+    margin-bottom: 8rem;
+}
+
+}
+
+@media (max-width: 513px){
+  .box section .content1 {
+    width: 119%;
+    font-size: 0rem;
+    /* margin-left: -26rem; */
+    margin-left: -63.5rem;
+    margin-bottom: 8rem;
+}
+.box section .content2 {
+  width: 103%;
+  margin-left: -67rem;
+  margin-top: -3rem;
+}
+.box section .content2 p {
+  font-size: 14px;
+  padding: 9px 112px;
+}
+
+
+.box section .content3 {
+  width: 96%;
+  margin-left: 14rem;
+  margin-bottom: 6rem;
+}
+.box section .content4 {
+  width: 96%;
+  margin-left: 85rem;
+  margin-bottom: -42px;
+}
+
+}
+
+
+
+
+@media (max-width: 425px){
+  .box section .content1 {
+    width: 119%;
+    font-size: 0rem;
+    /* margin-left: -26rem; */
+    margin-left: -41.5rem;
+    margin-bottom: 6rem;
+}
+
+.box section .content2 {
+  width: 103%;
+  margin-left: -49rem;
+  margin-top: -3rem;
+}
+.box section .content2 p {
+  font-size: 14px;
+  padding: 9px 77px;
+}
+
+
+.box section .content3 {
+  width: 96%;
+  margin-left: 7rem;
+  margin-bottom: 2rem;
+}
+
+/* .box section .content4 {
+  width: 94%;
+  margin-left: 55rem;
+  margin-bottom: -42px;
+
+} */
+
+.box section .content4 {
+  width: 119%;
+  margin-left: 71rem;
+  margin-bottom: -42px;
+}
+
+
+}
+
+
+
+@media (max-width: 375px){
+
+  .box section .content1 {
+    width: 119%;
+    font-size: 0rem;
+    /* margin-left: -26rem; */
+    margin-left: -32.5rem;
+    margin-bottom: 6rem;
+}
+
+.box section .content2 {
+  width: 100%;
+  margin-left: -42rem;
+  margin-top: -5rem;
+}
+.box section .content2 p {
+  font-size: 14px;
+  padding: 9px 39px;
+}
+
+
+.box section .content3 {
+  width: 96%;
+  margin-left: 7rem;
+  margin-bottom: 2rem;
+}
+
+.box section .content4 {
+  width: 94%;
+  margin-left: 55rem;
+  margin-bottom: -42px;
+
+}
+
+
+}
+
+
+@media (max-width: 320px){
+
+  .box section .content1 {
+    
+    width: 119%;
+    font-size: 1rem;
+    margin-left: -26rem;
+    margin-left: -25.5rem;
+    margin-bottom: 6rem;
+
+      
+  }
+
+  .box section .content2 {
+    width: 100%;
+    margin-left: -36rem;
+    margin-top: 1rem;
+}
+.box section .content2 p {
+  font-size: 14px;
+    padding: 0px 28px;
+  
+}
+
+.box section .content3 {
+  width: 121%;
+  margin-left: 11rem;
+  margin-bottom: 2rem;
+}
+
+.box section .content4 {
+  width: 94%;
+  margin-left: 55rem;
+  margin-bottom: -42px;
+
+}
+
+
+}
+
+@media (max-width: 275px){
+
+  .box section .content1 {
+    font-size: 1rem;
+    
+    margin-left: -15.5rem;
+    margin-bottom: 3rem;
+  }
+   
+  .box section .content1 h2{
+    font-size: 20px;
+  }
+
+  .box section .content1 h3{
+    font-size: 20px;
+  }
+
+
+
+}
+
+
+
+
+
+/* ---------------------------------------media quary for content section-------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
